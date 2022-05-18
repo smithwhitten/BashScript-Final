@@ -7,7 +7,7 @@ RED='\033[0;031m'
 GREEN='\033[0;032m'
 NC='\033[0m'
 
-
+#set homescreen function
 function HomeScreen(){
 
 	cd ~
@@ -32,7 +32,7 @@ function HomeScreen(){
 	echo -e "${RED}*${NC}                                     ((${BLUE}%%%%${NC}%(  (#${BLUE}%%%${NC}%(                        ${RED}*${NC}"
 	echo -e "${RED}*${NC}                                     %#${BLUE}%%%%%%%%%%%%%${NC}%(                        ${RED}*${NC}"
 	echo -e "${RED}*${NC}                                     %%%%%%%%%%%%%%%%(                        ${RED}*${NC}"
-	echo -e "${RED}*${NC}//////////////////////WELCOME TO ${RED}HYDRATECH'S${NC} CYBERSCRIPT//////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}/////////////////////////WELCOME TO Whitten'S${NC} CYBERSCRIPT//////////////////////${RED}*${NC}"
 	echo -e "${RED}*${NC}                                                                              ${RED}*${NC}"
 	echo -e "${RED}*${NC}///////////////////////////////ENTER ${GREEN}1${NC} TO BEGIN///////////////////////////////${RED}*${NC}"
 	echo -e "${RED}********************************************************************************"
@@ -47,7 +47,7 @@ function HomeScreen(){
 		1 )
 			#sudo apt-get update
 
-			MainScreen
+`			MainScreen
 			;;
 
 		* )
@@ -56,3 +56,10 @@ function HomeScreen(){
 
 	esac
 }
+
+
+#set mainscreen function
+
+
+
+
