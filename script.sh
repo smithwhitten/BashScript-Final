@@ -69,7 +69,89 @@ function HomeScreen(){
 
 
 #set mainscreen function
+function MainScreen(){
 
+	echo -e "${RED}********************************************************************************"
+	echo -e "********************************************************************************${NC}"                                                                             
+	echo -e "${RED}*${NC}                                                                              ${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                              ${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                              ${RED}*${NC}"
+	echo -e "${RED}*${NC}//////////////////////////////${GREEN}1. User Management${NC}      ////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}//////////////////////////////2. Updates              ////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}//////////////////////////////${GREEN}3. Unauthorized Media${NC}   ////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}//////////////////////////////${GREEN}4. Unauthorized software${NC}////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}//////////////////////////////${GREEN}5. Guest Removal${NC}        ////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}//////////////////////////////${GREEN}6. Disable Root${NC}         ////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}//////////////////////////////${GREEN}7. Open SSH${NC}             ////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}//////////////////////////////${GREEN}8. Network Security${NC}     ////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}//////////////////////////////${GREEN}9. Password Policy${NC}      ////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}//////////////////////////////${GREEN}10. File Permissions${NC}    ////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}//////////////////////////////${GREEN}11. System Security${NC}     ////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}//////////////////////////////${RED}X. Exit Program${NC}         ////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                              ${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                              ${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                              ${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                              ${RED}*${NC}"
+	echo -e "${RED}********************************************************************************"
+	echo -e "********************************************************************************${NC}"
 
+	mainAns=" "
 
+	read mainAns
+
+	case $mainAns in
+
+		1 )
+			UserManagement
+			;;
+
+		2 )
+			AutomaticUpdates
+			;;
+
+		3 )
+			MediaRemoval
+			;;
+
+		4 )
+			UnauthorizedSoftware
+			;;
+
+		5 )
+			GuestRemoval
+			;;
+
+		6 )
+			DisableRoot
+			;;		
+
+		7 )
+			OpenSSH
+			;;
+
+		8 )
+			NetWorkSecurity
+			;;
+
+		9 )
+			PasswordPolicy
+			;;
+		
+		10 )
+			FilePermissions
+			;;
+		11)
+			SystemSecurity
+			;;	
+		[xX] )
+			AreYouSure
+			;;
+
+		* )
+			MainScreen
+			;;
+
+	esac
+
+}
 
