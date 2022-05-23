@@ -157,7 +157,11 @@ function MainScreen(){
 
 
 
-#Set User Menu function
+#Set User Management Menu
+	#Set Authorized and Unauthorized Users
+	#Change Admin Profiles
+	#Add Users
+	#Check for Passwords
 function UserMangement(){
 
 	echo -e "${RED}********************************************************************************"
