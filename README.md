@@ -1,1 +1,1 @@
-BashScript Final
+Hardening Bash Script created by Whitten Smith. Exclusively for the use of the Whitten's Gull Lake High School Cyberpatriot team. Use of this script by any other teams or people for the cyberpatriot competition is strictly prohibited. If you do so you accept all responsibility for any rule breaches you may cause and the consequences of such. You may use this script as a refernce for your own cyberscript.
