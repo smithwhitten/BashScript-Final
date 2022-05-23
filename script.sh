@@ -155,3 +155,73 @@ function MainScreen(){
 
 }
 
+
+
+#Set User Menu function
+function UserMangement(){
+
+	echo -e "${RED}********************************************************************************"
+	echo -e "********************************************************************************${NC}"
+	echo -e "${RED}*${NC}                                                                             ${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                             ${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                             ${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                             ${RED}*${NC}"
+	echo -e "${RED}*${NC}/////////////////////////${GREEN}1. Delete Unauthorized Users${NC}////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                             ${RED}*${NC}"
+	echo -e "${RED}*${NC}/////////////////////////${GREEN}2. Change Weak Passwords${NC}    /////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                             ${RED}*${NC}"
+	echo -e "${RED}*${NC}/////////////////////////${GREEN}3. Change Admin Access${NC}      /////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                             ${RED}*${NC}"
+	echo -e "${RED}*${NC}/////////////////////////${GREEN}4. Add Users${NC}                /////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                             ${RED}*${NC}"
+	echo -e "${RED}*${NC}/////////////////////////${GREEN}5. Check for Passwords${NC}      /////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                             ${RED}*${NC}"
+	echo -e "${RED}*${NC}/////////////////////////6. ${RED}Main Screen${NC}              //////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                             ${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                             ${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                             ${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                             ${RED}*${NC}"
+	echo -e "${RED}*${NC}                                                                             ${RED}*${NC}"
+	echo -e "${RED}********************************************************************************"
+	echo -e "********************************************************************************${NC}"
+
+	userAns=" "
+
+	read userAns
+
+	case $userAns in
+	
+		1 )
+			UnauthorizedUsers
+			
+			;;
+
+		2 )
+			ChangePasswords
+			
+			;;
+
+		3 )
+			ChangeAdmins
+			
+			;;
+
+		4 )
+			AddUsers
+			
+			;;
+
+		5)
+			CheckPasswords
+			;;
+
+		6 )
+			MainScreen
+			;;
+		* )
+			UserManagement
+			;;
+	esac
+
+}
+
