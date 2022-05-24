@@ -76,7 +76,7 @@ function MainScreen(){
 	echo -e "${RED}*${NC}                                                                              ${RED}*${NC}"
 	echo -e "${RED}*${NC}                                                                              ${RED}*${NC}"
 	echo -e "${RED}*${NC}//////////////////////////////${GREEN}1. User Management${NC}      ////////////////////////${RED}*${NC}"
-	echo -e "${RED}*${NC}//////////////////////////////2. Updates              ////////////////////////${RED}*${NC}"
+	echo -e "${RED}*${NC}//////////////////////////////${GREEN}2. Updates              ////////////////////////${RED}*${NC}"
 	echo -e "${RED}*${NC}//////////////////////////////${GREEN}3. Unauthorized Media${NC}   ////////////////////////${RED}*${NC}"
 	echo -e "${RED}*${NC}//////////////////////////////${GREEN}4. Unauthorized software${NC}////////////////////////${RED}*${NC}"
 	echo -e "${RED}*${NC}//////////////////////////////${GREEN}5. Guest Removal${NC}        ////////////////////////${RED}*${NC}"
