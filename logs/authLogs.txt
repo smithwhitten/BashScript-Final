@@ -1,0 +1,321 @@
+auth log:
+May 23 09:17:01 ubuntu CRON[4266]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 23 09:17:01 ubuntu CRON[4266]: pam_unix(cron:session): session closed for user root
+May 23 09:40:45 ubuntu sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=wsmith rhost=  user=wsmith
+May 23 09:40:51 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/su -
+May 23 09:40:51 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 23 09:40:51 ubuntu su[4485]: Successful su for root by root
+May 23 09:40:51 ubuntu su[4485]: + /dev/pts/0 root:root
+May 23 09:40:51 ubuntu su[4485]: pam_unix(su:session): session opened for user root by (uid=0)
+May 23 09:40:51 ubuntu systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+May 23 09:40:51 ubuntu systemd-logind[702]: New session 3 of user root.
+May 23 10:00:12 ubuntu su[4485]: pam_unix(su:session): session closed for user root
+May 23 10:00:12 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 23 10:00:12 ubuntu systemd-logind[702]: Removed session 3.
+May 23 10:00:19 ubuntu systemd-logind[702]: System is powering down.
+May 24 08:53:54 ubuntu systemd-logind[734]: New seat seat0.
+May 24 08:53:54 ubuntu systemd-logind[734]: Watching system buttons on /dev/input/event0 (Power Button)
+May 24 08:53:55 ubuntu gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+May 24 08:53:58 ubuntu systemd: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+May 24 08:53:58 ubuntu systemd-logind[734]: New session c1 of user gdm.
+May 24 08:54:00 ubuntu systemd-logind[734]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+May 24 08:54:04 ubuntu polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.25 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 24 08:54:26 ubuntu dbus-daemon[708]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+May 24 08:54:36 ubuntu gdm-password]: pam_unix(gdm-password:session): session opened for user wsmith by (uid=0)
+May 24 08:54:36 ubuntu systemd: pam_unix(systemd-user:session): session opened for user wsmith by (uid=0)
+May 24 08:54:36 ubuntu systemd-logind[734]: New session 2 of user wsmith.
+May 24 08:54:40 ubuntu polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.81 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 24 08:55:04 ubuntu dbus-daemon[708]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+May 24 08:55:44 ubuntu pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 24 08:55:44 ubuntu pkexec[9049]: wsmith: Executing command [USER=root] [TTY=unknown] [CWD=/home/wsmith] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+May 24 08:55:55 ubuntu dbus-daemon[708]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+May 24 08:58:35 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/su -
+May 24 08:58:35 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 24 08:58:35 ubuntu su[9160]: Successful su for root by root
+May 24 08:58:35 ubuntu su[9160]: + /dev/pts/0 root:root
+May 24 08:58:35 ubuntu su[9160]: pam_unix(su:session): session opened for user root by (uid=0)
+May 24 08:58:35 ubuntu systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+May 24 08:58:35 ubuntu systemd-logind[734]: New session 3 of user root.
+May 24 09:17:01 ubuntu CRON[9443]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 24 09:17:01 ubuntu CRON[9443]: pam_unix(cron:session): session closed for user root
+May 24 09:49:29 ubuntu su[9160]: pam_unix(su:session): session closed for user root
+May 24 09:49:29 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 24 09:49:29 ubuntu systemd-logind[734]: Removed session 3.
+May 24 09:49:59 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/su -
+May 24 09:49:59 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 24 09:49:59 ubuntu su[9819]: Successful su for root by root
+May 24 09:49:59 ubuntu su[9819]: + /dev/pts/0 root:root
+May 24 09:49:59 ubuntu su[9819]: pam_unix(su:session): session opened for user root by (uid=0)
+May 24 09:49:59 ubuntu systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+May 24 09:49:59 ubuntu systemd-logind[734]: New session 3 of user root.
+May 24 09:56:36 ubuntu su[9819]: pam_unix(su:session): session closed for user root
+May 24 09:56:36 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 24 09:56:36 ubuntu systemd-logind[734]: Removed session 3.
+May 24 09:59:20 ubuntu systemd-logind[734]: System is powering down.
+May 25 08:49:16 ubuntu systemd-logind[729]: New seat seat0.
+May 25 08:49:16 ubuntu systemd-logind[729]: Watching system buttons on /dev/input/event0 (Power Button)
+May 25 08:49:21 ubuntu gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+May 25 08:49:21 ubuntu systemd: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+May 25 08:49:21 ubuntu systemd-logind[729]: New session c1 of user gdm.
+May 25 08:49:26 ubuntu systemd-logind[729]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+May 25 08:49:32 ubuntu polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.30 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 25 08:49:40 ubuntu gdm-password]: pam_unix(gdm-password:session): session opened for user wsmith by (uid=0)
+May 25 08:49:40 ubuntu systemd: pam_unix(systemd-user:session): session opened for user wsmith by (uid=0)
+May 25 08:49:40 ubuntu systemd-logind[729]: New session 2 of user wsmith.
+May 25 08:49:46 ubuntu polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.79 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 25 08:49:51 ubuntu dbus-daemon[742]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+May 25 08:50:48 ubuntu pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 25 08:50:48 ubuntu pkexec[3388]: wsmith: Executing command [USER=root] [TTY=unknown] [CWD=/home/wsmith] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+May 25 09:17:01 ubuntu CRON[3749]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 25 09:17:01 ubuntu CRON[3749]: pam_unix(cron:session): session closed for user root
+May 26 08:54:37 ubuntu systemd-logind[664]: New seat seat0.
+May 26 08:54:37 ubuntu systemd-logind[664]: Watching system buttons on /dev/input/event0 (Power Button)
+May 26 08:54:41 ubuntu gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+May 26 08:54:41 ubuntu systemd-logind[664]: New session c1 of user gdm.
+May 26 08:54:41 ubuntu systemd: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+May 26 08:54:43 ubuntu systemd-logind[664]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+May 26 08:54:46 ubuntu polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.26 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 26 08:55:09 ubuntu dbus-daemon[708]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+May 26 08:55:53 ubuntu gdm-password]: pam_unix(gdm-password:session): session opened for user wsmith by (uid=0)
+May 26 08:55:53 ubuntu systemd-logind[664]: New session 2 of user wsmith.
+May 26 08:55:53 ubuntu systemd: pam_unix(systemd-user:session): session opened for user wsmith by (uid=0)
+May 26 08:55:58 ubuntu polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.88 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 26 08:56:22 ubuntu dbus-daemon[708]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+May 26 08:56:52 ubuntu sudo:   wsmith : TTY=pts/1 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/su -
+May 26 08:56:52 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 26 08:56:52 ubuntu su[4146]: Successful su for root by root
+May 26 08:56:52 ubuntu su[4146]: + /dev/pts/1 root:root
+May 26 08:56:52 ubuntu su[4146]: pam_unix(su:session): session opened for user root by (uid=0)
+May 26 08:56:52 ubuntu systemd-logind[664]: New session 3 of user root.
+May 26 08:56:52 ubuntu systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+May 26 08:57:02 ubuntu pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 26 08:57:02 ubuntu pkexec[4209]: wsmith: Executing command [USER=root] [TTY=unknown] [CWD=/home/wsmith] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+May 26 08:59:51 ubuntu su[4146]: pam_unix(su:session): session closed for user root
+May 26 08:59:51 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 26 08:59:51 ubuntu systemd-logind[664]: Removed session 3.
+May 26 09:17:01 ubuntu CRON[4576]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 26 09:17:01 ubuntu CRON[4576]: pam_unix(cron:session): session closed for user root
+May 26 09:21:44 ubuntu sudo:   wsmith : TTY=pts/1 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/su -
+May 26 09:21:44 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 26 09:21:44 ubuntu su[4758]: Successful su for root by root
+May 26 09:21:44 ubuntu su[4758]: + /dev/pts/1 root:root
+May 26 09:21:44 ubuntu su[4758]: pam_unix(su:session): session opened for user root by (uid=0)
+May 26 09:21:44 ubuntu systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+May 26 09:21:44 ubuntu systemd-logind[664]: New session 3 of user root.
+May 26 09:22:17 ubuntu dbus-daemon[708]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+May 26 09:23:51 ubuntu su[4758]: pam_unix(su:session): session closed for user root
+May 26 09:23:51 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 26 09:23:51 ubuntu systemd-logind[664]: Removed session 3.
+May 26 09:42:09 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/su -
+May 26 09:42:09 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 26 09:42:09 ubuntu su[5240]: Successful su for root by root
+May 26 09:42:09 ubuntu su[5240]: + /dev/pts/0 root:root
+May 26 09:42:09 ubuntu su[5240]: pam_unix(su:session): session opened for user root by (uid=0)
+May 26 09:42:09 ubuntu systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+May 26 09:42:09 ubuntu systemd-logind[664]: New session 3 of user root.
+May 26 09:43:17 ubuntu sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/bin/rm BashScript-Final --force -y
+May 26 09:43:17 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 26 09:43:17 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 26 09:43:24 ubuntu sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/bin/rm BashScript-Final --force
+May 26 09:43:24 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 26 09:43:24 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 26 09:43:48 ubuntu sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/bin/rm -d BashScript-Final --force
+May 26 09:43:48 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 26 09:43:48 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 26 09:44:04 ubuntu sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/bin/rm -r BashScript-Final --force
+May 26 09:44:04 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 26 09:44:04 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 26 09:46:24 ubuntu su[5240]: pam_unix(su:session): session closed for user root
+May 26 09:46:24 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 26 09:46:24 ubuntu systemd-logind[664]: Removed session 3.
+May 26 09:57:44 ubuntu systemd-logind[664]: System is powering down.
+May 27 08:50:43 ubuntu systemd-logind[711]: New seat seat0.
+May 27 08:50:43 ubuntu systemd-logind[711]: Watching system buttons on /dev/input/event0 (Power Button)
+May 27 08:50:47 ubuntu gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm by (uid=0)
+May 27 08:50:47 ubuntu systemd: pam_unix(systemd-user:session): session opened for user gdm by (uid=0)
+May 27 08:50:47 ubuntu systemd-logind[711]: New session c1 of user gdm.
+May 27 08:50:50 ubuntu systemd-logind[711]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+May 27 08:50:53 ubuntu polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.30 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 27 08:51:12 ubuntu gdm-password]: pam_unix(gdm-password:session): session opened for user wsmith by (uid=0)
+May 27 08:51:12 ubuntu systemd: pam_unix(systemd-user:session): session opened for user wsmith by (uid=0)
+May 27 08:51:12 ubuntu systemd-logind[711]: New session 2 of user wsmith.
+May 27 08:51:14 ubuntu dbus-daemon[646]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+May 27 08:51:15 ubuntu polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.81 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 27 08:51:39 ubuntu dbus-daemon[646]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+May 27 08:52:20 ubuntu pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 27 08:52:20 ubuntu pkexec[2838]: wsmith: Executing command [USER=root] [TTY=unknown] [CWD=/home/wsmith] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+May 27 08:57:50 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/su -
+May 27 08:57:50 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 08:57:50 ubuntu su[3212]: Successful su for root by root
+May 27 08:57:50 ubuntu su[3212]: + /dev/pts/0 root:root
+May 27 08:57:50 ubuntu su[3212]: pam_unix(su:session): session opened for user root by (uid=0)
+May 27 08:57:50 ubuntu systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+May 27 08:57:50 ubuntu systemd-logind[711]: New session 3 of user root.
+May 27 08:58:41 ubuntu sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/bin/rm -r BashScript-Final
+May 27 08:58:41 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 08:58:41 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 08:58:52 ubuntu sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/bin/rm -r Hydra-Tech-Scripting
+May 27 08:58:52 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 08:58:52 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 08:59:03 ubuntu sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/bin/rm -r Hyrda-Tech-Scripting
+May 27 08:59:03 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 08:59:03 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 08:59:09 ubuntu su[3212]: pam_unix(su:session): session closed for user root
+May 27 08:59:09 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 08:59:09 ubuntu systemd-logind[711]: Removed session 3.
+May 27 09:08:50 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/sbin/userdel -r 6
+May 27 09:08:50 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:08:50 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:08:56 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/sbin/deluser wmith adm
+May 27 09:08:56 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:08:56 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:08:56 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/sbin/deluser wmith sudo
+May 27 09:08:56 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:08:56 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:09:08 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/sbin/useradd smith
+May 27 09:09:08 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:09:08 ubuntu useradd[3430]: new group: name=smith, GID=1001
+May 27 09:09:08 ubuntu useradd[3430]: new user: name=smith, UID=1001, GID=1001, home=/home/smith, shell=/bin/sh
+May 27 09:09:08 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:09:08 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/mkdir /home/smith
+May 27 09:09:08 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:09:08 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:09:41 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/bash -c echo "allow-guest=false" >> /etc/lightdm/lightdm.conf
+May 27 09:09:41 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:09:41 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:09:51 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/find / -name *.mp3 -type f -delete
+May 27 09:09:51 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:10:01 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:10:01 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/find / -name *.mov -type f -delete
+May 27 09:10:01 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:10:02 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:10:02 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/find / -name *.mp4 -type f -delete
+May 27 09:10:02 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:10:04 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:10:04 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/find / -name *.avi -type f -delete
+May 27 09:10:04 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:10:05 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:10:05 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/find / -name *.mpg -type f -delete
+May 27 09:10:05 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:10:06 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:10:06 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/find / -name *.mpeg -type f -delete
+May 27 09:10:06 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:10:08 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:10:08 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/find / -name *.flac -type f -delete
+May 27 09:10:08 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:10:09 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:10:09 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/find / -name *.m4a -type f -delete
+May 27 09:10:09 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:10:11 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:10:11 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/find / -name *.flv -type f -delete
+May 27 09:10:11 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:10:12 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:10:12 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/find / -name *.ogg -type f -delete
+May 27 09:10:12 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:10:14 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:10:14 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/find /home -name *.gif -type f -delete
+May 27 09:10:14 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:10:14 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:10:14 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/find /home -name *.png -type f -delete
+May 27 09:10:14 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:10:14 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:10:14 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/find /home -name *.jpg -type f -delete
+May 27 09:10:14 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:10:14 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:10:14 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/find /home -name *.jpeg -type f -delete
+May 27 09:10:14 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:10:14 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:10:24 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/apt-get install perl --force-yes -y
+May 27 09:10:24 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:10:25 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:10:52 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/sbin/deluser smith adm
+May 27 09:10:52 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:10:52 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:10:52 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/sbin/deluser smith sudo
+May 27 09:10:52 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:10:52 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:11:01 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/sbin/userdel -r smith
+May 27 09:11:01 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:11:01 ubuntu userdel[3543]: delete user 'smith'
+May 27 09:11:01 ubuntu userdel[3543]: removed group 'smith' owned by 'smith'
+May 27 09:11:01 ubuntu userdel[3543]: removed shadow group 'smith' owned by 'smith'
+May 27 09:11:01 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:11:28 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/apt-get install openssh-server --force-yes -y
+May 27 09:11:28 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:11:32 ubuntu useradd[3815]: new user: name=sshd, UID=122, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin
+May 27 09:11:32 ubuntu usermod[3821]: change user 'sshd' password
+May 27 09:11:32 ubuntu chage[3826]: changed password expiry for sshd
+May 27 09:11:33 ubuntu sshd[3917]: Server listening on 0.0.0.0 port 22.
+May 27 09:11:33 ubuntu sshd[3917]: Server listening on :: port 22.
+May 27 09:11:37 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:11:37 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/systemctl enable ssh
+May 27 09:11:37 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:11:37 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:11:54 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/sbin/ufw enable
+May 27 09:11:54 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:11:54 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:11:54 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/sbin/ufw deny 23
+May 27 09:11:54 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:11:54 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:11:54 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/sbin/ufw deny 2049
+May 27 09:11:54 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:11:55 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:11:55 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/sbin/ufw deny 515
+May 27 09:11:55 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:11:55 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:11:55 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/sbin/ufw deny 111
+May 27 09:11:55 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:11:55 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:11:55 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/bash -c echo 127.0.0.1#011localhost > /etc/hosts
+May 27 09:11:55 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:11:55 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:11:56 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/bash -c echo 127.0.1.1#011ubuntu  >> /etc/hosts
+May 27 09:11:56 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:11:56 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:11:56 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/bash -c echo ::1     ip6-localhost ip6-loopback >> /etc/hosts
+May 27 09:11:56 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:11:56 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:11:56 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/bash -c echo fe00::0 ip6-localnet >> /etc/hosts
+May 27 09:11:56 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:11:56 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:11:56 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/bash -c echo ff00::0 ip6-mcastprefix >> /etc/hosts
+May 27 09:11:56 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:11:56 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:11:56 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/bash -c echo ff02::1 ip6-allnodes >> /etc/hosts
+May 27 09:11:56 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:11:56 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:11:56 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/bash -c echo ff02::2 ip6-allrouters >> /etc/hosts
+May 27 09:11:56 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:11:56 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:11:56 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/tee -a /etc/sysctl.conf
+May 27 09:11:56 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:11:56 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:12:05 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/apt-get install libpam-cracklib --force-yes -y
+May 27 09:12:05 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:12:09 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:12:09 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/apt-get install perl --force-yes -y
+May 27 09:12:09 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:12:10 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:12:10 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/bash -c echo "auth optional pam_tally.so deny=5 unlock_time=900 onerr=fail audit even_deny_root_account silent" >> /etc/pam.d/common-auth
+May 27 09:12:10 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:12:10 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:12:10 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/perl -pi -e s/.*pam_cracklib.so.*/password requisite pam_cracklib.so retry=3 minlen=8 difok=3 reject_username minclass=3 maxrepeat=2 dcredit=1 ucredit=1 lcredit=1 ocredit=1/g /etc/pam.d/common-password
+May 27 09:12:10 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:12:10 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:12:10 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/bin/bash -c echo "password requisite pam_pwhistory.so use_authok remember=24 enforce_for_root" >> /etc/pam.d/common-password
+May 27 09:12:10 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:12:10 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:12:10 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/perl -pi -e s/.*pam_unix.so.*/password [success=1 default=ignore] pam_unix.so obscure use_authtok sha512 shadow/g /etc/pam.d/common-password
+May 27 09:12:10 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:12:10 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:12:10 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/perl -pi -e s/^PASS_MIN_DAYS.*/PASS_MIN_DAYS 7/g /etc/login.defs
+May 27 09:12:10 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:12:10 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:12:10 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/perl -pi -e s/^PASS_MAX_DAYS.*/PASS_MAX_DAYS 90/g /etc/login.defs
+May 27 09:12:10 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:12:10 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:12:10 ubuntu sudo:   wsmith : TTY=pts/0 ; PWD=/home/wsmith ; USER=root ; COMMAND=/usr/bin/perl -pi -e s/^PASS_WARN_AGE.*/PASS_WARN_AGE 14/g /etc/login.defs
+May 27 09:12:10 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 27 09:12:10 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+May 27 09:13:18 ubuntu pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+May 27 09:13:18 ubuntu pkexec[5953]: wsmith: Executing command [USER=root] [TTY=unknown] [CWD=/home/wsmith] [COMMAND=/usr/lib/update-notifier/package-system-locked]

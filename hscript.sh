@@ -2,7 +2,6 @@
 
 
 #set color variables for menus and interface
-BLUE='\033[0;34'
 RED='\033[0;031m'
 GREEN='\033[0;032m'
 NC='\033[0m'
@@ -56,7 +55,7 @@ function HomeScreen(){
                 1 )
                         #sudo apt-get update
 
-`                       MainScreen
+                        MainScreen
                         ;;
 
                 * )
