@@ -8,20 +8,21 @@ NC='\033[0m'
 BLACK='\033[0;030m'
 
 #Saves logs before you begin to mess with the machine
-mkdir logs
+#mkdir logs
+
 echo "auth log:" > logs/authLogs.txt
-cat /var/log/auth.log >> logs/authLogs.txt
-#echo "" > logs/authLogs.txt
+#cat /var/log/auth.log >> logs/authLogs.txt
+echo "" > logs/authLogs.txt
 echo "dpkg log:" > logs/dpkgLogs.txt
-cat /var/log/dpkg.log >> logs/dpkgLogs.txt
+#cat /var/log/dpkg.log >> logs/dpkgLogs.txt
 echo "" > logs/secureLogs.txt
-cat /var/log/secure > logs/secureLogs.txt
+#cat /var/log/secure > logs/secureLogs.txt
 echo  " " > logs/messageLogs.txt
-cat /var/log/messages >> logs/messageLogs.txt
+#cat /var/log/messages >> logs/messageLogs.txt
 echo  " " > logs/historyLogs.txt
-cat /var/log/apt/history.log >> logs/historyLogs.txt
+#cat /var/log/apt/history.log >> logs/historyLogs.txt
 echo " " > logs/historyLogs.txt
-cp /root/.bash_history logs/root.bash_history
+#cp /root/.bash_history logs/root.bash_history
 
 usrLoggedIn=$(pwd | cut -d'/' -f3)	#It’s either 3 or 2, depending
 debian="debian"
@@ -30,10 +31,10 @@ distro=$(cat /etc/*-release | grep  "ID=" | grep -v "VERSION"| cut -d'=' -f2)
 echo -n "Are you ready to continue through the script? Are all of the Forensics Answered Yet?	"
 read info
 
-if [[ $(ls | grep -c -e "admin.txt" -e "users.txt") -ne 2 ]]; then
-    echo "Necessary text files for users and admins are not present. Shutting down script."
-    exit 1
-fi
+#if [[ $(ls | grep -c -e "admin.txt" -e "users.txt") -ne 2 ]]; then
+    #echo "Necessary text files for users and admins are not present. Shutting down script."
+    #exit 1
+#fi
 
 if [[ $EUID -ne 0 ]]; then
    echo "Too Bad. This script must be run as root"
